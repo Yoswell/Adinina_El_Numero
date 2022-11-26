@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juego | 1.0</title>
+  <link rel="stylesheet" href="Index.css">
+  <link href="http://fonts.cdnfonts.com/css/sf-pixelate" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+        crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>ADIVINA EL NUMERO</h1>
+    </nav>
+  </header>
+  <div class="container cards" id="Principal">
+    <div class="card">
+      <div class="titulo">
+        <h3 class="espaciotu">Puntaje&nbsp;:&nbsp;</h3><h3 id="puntajeTu">0</h3>
+      </div>
+      <div class="cardJuego">
+        <div class="base">
+            <h1>?</h1>
+        </div>
+        <div class="line"></div>
+      </div>
+
+      <div class="informacion">
+        <h1 id="One">¿Cual crees que es el numero?</h1>
+        <h1 id="Two">¡¡El numero es muy alto!!</h1>
+        <h1 id="Three">¡¡El numero es muy bajo!!</h1>
+        <h1 id="Ford">¡¡Corecto, has acertado!!</h1>
+      </div>
+
+      
+      <div class="opcion1">
+        <div class="tuRespuesta" id="tuRespuesta">
+          <input type="text" class="form-control" id="inp">
+          <button class="btn" onclick="averiguarNumero();">Verificar<i class="fas fa-check"></i></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script src="Index.js"></script>
+</html>
