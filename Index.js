@@ -7,7 +7,7 @@ const reset = document.getElementById('inp');
 var puntaje = 0;
 var num = 0;
 
-    num = Math.floor(Math.random() * 4 + 1);
+    num = Math.floor(Math.random() * 30 + 1);
 
 function averiguarNumero() {
     Two.style.display = 'none';
@@ -18,7 +18,7 @@ function averiguarNumero() {
     if(respuesta == num) {
         Ford.style.display = 'block';
         puntaje++;
-        num = Math.floor(Math.random() * 4 + 1);
+        num = Math.floor(Math.random() * 30 + 1);
         borrarRespuesta();
     } else if(respuesta > num) {
         Two.style.display = 'block';
