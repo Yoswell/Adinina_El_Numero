@@ -24,6 +24,7 @@ header h1 { font-size: 2rem; color: #111113; }
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: -50px;
     width: 100%;
     height: 100%;
 }
@@ -126,6 +127,8 @@ header h1 { font-size: 2rem; color: #111113; }
 
 .tuRespuesta h1 img {
     width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .cardJuego .base input {
@@ -157,3 +160,17 @@ header h1 { font-size: 2rem; color: #111113; }
 #Two,
 #Three,
 #Ford { display: none; }
+
+@media (max-width: 500px) {
+    header h1 { text-align: center; font-size: 1.8rem !important; }
+    .informacion h1 { text-align: center; font-size: 1rem !important;}
+    .tuRespuesta h1 { text-align: center; font-size: 1rem !important;}
+    .cards { margin-top: -50px;}
+}
+
+@media (max-width: 360px) {
+    header h1 { text-align: center; font-size: 1.5rem !important; }
+    .informacion h1 { text-align: center; font-size: 1rem !important;}
+    .tuRespuesta h1 { text-align: center; font-size: 0.8rem !important;}
+    .cards { margin-top: -50px;}
+}
