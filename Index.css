@@ -3,40 +3,29 @@
 * { font-family: 'Silkscreen', cursive; }
 
 body {
-    background: #111113 !important;
-    height: 70vh;
-    color: #fff;
-}
-
-header { 
+    background: #d6c0ff !important;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ff4161;
-    width: 100%; 
-    height: 80px; 
+    color: #fff;
 }
-
-header h1 { font-size: 2rem; color: #111113; }
 
 .cards {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-top: -50px;
-    width: 100%;
-    height: 100%;
+    transition: 500ms;
 }
 
 .card {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 500px;
-    top: 150px;
-    height: 700px !important;
-    background-color: #111113 !important;
+    width: auto;
+    height: 500px;
+    background-color: #ffe3ff !important;
     border: none !important;
     border-radius: 20px;
 }
@@ -46,11 +35,11 @@ header h1 { font-size: 2rem; color: #111113; }
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 50px;
-    background-color: #ff4161;
+    height: 70px;
+    background-color: #1c1833;
     font-size: 1.5rem;
-    border-radius: 8px;
-    color: #111113;
+    border-radius: 8px 8px 0 0;
+    color: #fff;
 }
 
 .titulo h3 { font-size: 1.5rem; }
@@ -86,17 +75,16 @@ header h1 { font-size: 2rem; color: #111113; }
     align-items: center;
     justify-content: center;
     top: -36px;
-    background-color: #232427;
+    background-color: #ffe3ff;
     border-radius: 0 0 8px 8px;
 }
 
-.informacion h1 { color: #fff; font-size: 1.2rem; }
+.informacion h1 { color: #111113; font-size: 1.2rem; }
 
 .line {
     width: 100%;
     height: 10px;
-    border-radius: 10px 10px 0 0;
-    background-color: #ff4161;
+    background-color: #1c1833;
     margin-top: -10px;
 }
 
@@ -104,7 +92,6 @@ header h1 { font-size: 2rem; color: #111113; }
     position: relative;
     display: flex;
     align-items: center;
-    top: -50px;
     width: 100%;
     height: 300px;
 }
@@ -137,9 +124,9 @@ header h1 { font-size: 2rem; color: #111113; }
     width: 100%;
     font-size: 2rem;
     font-weight: bold;
-    background-color: #111113;
-    color: #fff;
-    border: 3px solid #ff4161;
+    background-color: #d6c0ff;
+    color: #111113;
+    border: 5px solid #1c1833;
     box-shadow: none;
 }
 
@@ -149,28 +136,14 @@ header h1 { font-size: 2rem; color: #111113; }
     justify-content: center;
     text-align: center;
     height: 50px;
-    width: 100%;
+    width: 200px;
     border-radius: 8px;
     font-size: 1rem;
     border: none;
-    background-color: #232427;
+    background-color: #1c1833;
     color: #fff;
 }
 
 #Two,
 #Three,
 #Ford { display: none; }
-
-@media (max-width: 500px) {
-    header h1 { text-align: center; font-size: 1.8rem !important; }
-    .informacion h1 { text-align: center; font-size: 1rem !important;}
-    .tuRespuesta h1 { text-align: center; font-size: 1rem !important;}
-    .cards { margin-top: -50px;}
-}
-
-@media (max-width: 360px) {
-    header h1 { text-align: center; font-size: 1.5rem !important; }
-    .informacion h1 { text-align: center; font-size: 1rem !important;}
-    .tuRespuesta h1 { text-align: center; font-size: 0.8rem !important;}
-    .cards { margin-top: -50px;}
-}
